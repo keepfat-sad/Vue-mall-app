@@ -1,7 +1,7 @@
 <template>
     <div class="homePage">
         <div class="top"  @click="showPopup">
-            <van-nav-bar title="首页" :left-text="areas" fixed>
+            <van-nav-bar title="首页" :left-text="areas" fixed >
                 <van-icon name="search" slot="right" />
             </van-nav-bar>
         </div>

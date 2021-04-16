@@ -6,6 +6,7 @@ import Shopping from '../views/Shopping.vue';
 import Search from '../views/Search.vue';
 import HomePage from '../views/HomePage.vue';
 import User from '../views/User.vue';
+import Location from '../views/Location.vue';
 
 VueRouter.prototype.back = false;
 VueRouter.prototype.goBack = function goBack() {
@@ -44,6 +45,11 @@ const routes = [
     path: '/search',
     name: 'search',
     component: Search,
+  },
+  {
+    path: '/location',
+    name: 'location',
+    component: Location,
   },
   {
     path: '*',
