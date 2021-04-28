@@ -5,7 +5,6 @@
         left-text="返回"
         left-arrow
         @click-left="onClickLeft"
-        @click-right="onClickRight"
         />
         <van-address-list
         v-model="chosenAddressId"
@@ -59,3 +58,9 @@ export default {
   },
 };
 </script>
+<style scoped>
+  .view {
+    background-color: #fff;
+    height: 100vh;
+  }
+</style>
