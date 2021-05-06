@@ -19,9 +19,10 @@
                 icon="balance-pay"
                 is-link
                 style="marginBottom:15px"
+                to="/money"
                 />
             <van-cell title="地址管理" icon="location-o" is-link to="/location"/>
-            <van-cell title="优惠劵" icon="discount" is-link to="/coupon"/>
+            <van-cell title="优惠劵" icon="discount" is-link />
             <van-cell title="订单管理" icon="logistics" is-link to="/order"/>
             <van-cell
                 title="设置"

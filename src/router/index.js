@@ -11,6 +11,7 @@ import Location from '../views/Location.vue';
 import Money from '../views/Money.vue';
 import Coupon from '../components/Coupon.vue';
 import Step from '../components/Step.vue';
+import Loading from '../components/Loading.vue';
 
 VueRouter.prototype.back = false;
 VueRouter.prototype.goBack = function goBack() {
@@ -76,8 +77,13 @@ const routes = [
     component: Money,
   },
   {
+    path: '/loading',
+    name: 'loading',
+    component: Loading,
+  },
+  {
     path: '*',
-    redirect: '/home/classify',
+    redirect: '/loading',
   },
 ];
 

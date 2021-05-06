@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <transition :name="transitionName" >
+    <transition :name="transitionName">
       <router-view class="view"></router-view>
     </transition>
   </div>
@@ -30,21 +30,20 @@ export default {
     },
   },
 };
-
 </script>
 
 <style lang="less">
-  .view {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    transition: transform .3s linear;
-  }
-  .left-enter {
-    transform: translate(100%, 0);
-  }
-  .right-leave-to {
-    transform: translate(100%, 0);
-  }
+.view {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  transition: transform 0.3s linear;
+}
+.left-enter {
+  transform: translate(100%, 0);
+}
+.right-leave-to {
+  transform: translate(100%, 0);
+}
 </style>
